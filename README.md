@@ -4,11 +4,11 @@
 c1
   digraph G {
     END -> A [label="A-Z, a-z, 0-9"];
+    A -> S [label="A-Z, a-z, _"];
     A -> A [label="A-Z, a-z, 0-9"];
     B -> A [label="A-Z, a-z, 0-9"]; 
     S -> B [label="space"];
     END -> B [label="space"];
-    A -> S [label="A-Z, a-z, _"];
   }
 c1
 </details>
