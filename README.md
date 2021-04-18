@@ -28,18 +28,18 @@ c2
     END -> F [label="0-9"];
     END -> G [label="F, f, L, l"];
     END -> H [label="space"];
+    G -> E [label="-[1-9], 1-9"];
+    G -> F [label="0-9"];
+    F -> F [label="0-9"];
+    F -> E [label="-[1-9], 1-9"];
+    H -> G [label="F, f, L, l"];
+    E -> D [label="e, E"];
     A -> A [label="0-9"];
     B -> A [label="0-9"];
     C -> B [label="."];
     C -> C [label="0-9"];
     D -> B [label="."];
     D -> C [label="0-9"];
-    E -> D [label="e, E"];
-    F -> E [label="-[1-9], 1-9"];
-    G -> E [label="-[1-9], 1-9"];
-    G -> F [label="0-9"];
-    F -> F [label="0-9"];
-    H -> G [label="F, f, L, l"];
   }
 c2
 </details>
