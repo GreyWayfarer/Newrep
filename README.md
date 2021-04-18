@@ -19,13 +19,13 @@ c1
 c2
   digraph S {
     END -> H [label="space"];
+    S -> H [label="space"];
     END -> S [label="0-9"];
     END -> G [label="F, f, L, l"];
     END -> F [label="0-9"];
     END -> E [label="-[1-9], 1-9"];
     END -> C [label="0-9"];
     END -> A [label="0-9"];
-    S -> H [label="space"];
     H -> G [label="F, f, L, l"];
     G -> F [label="0-9"];
     F -> F [label="0-9"];
