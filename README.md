@@ -19,8 +19,6 @@ c1
 c2
   digraph S {
     END -> S [label="0-9"];
-    A -> S [label="1-9"];
-    B -> S [label="0, 1-9"];
     END -> H [label="space"];
     END -> C [label="0-9"];
     END -> E [label="-[1-9], 1-9"];
@@ -40,6 +38,8 @@ c2
     C -> C [label="0-9"];
     D -> B [label="."];
     D -> C [label="0-9"];
+    A -> S [label="1-9"];
+    B -> S [label="0, 1-9"];
   }
 c2
 </details>
