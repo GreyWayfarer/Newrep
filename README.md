@@ -5,9 +5,9 @@ c1
   digraph G {
     END -> B [label="space"];
     END -> A [label="A-Z, a-z, 0-9"];
-    S -> B [label="space"];
     A -> A [label="A-Z, a-z, 0-9"];
-    B -> A [label="A-Z, a-z, 0-9"];
+    B -> A [label="A-Z, a-z, 0-9"]; 
+    S -> B [label="space"];
     A -> S [label="A-Z, a-z, _"];
   }
 c1
