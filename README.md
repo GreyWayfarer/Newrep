@@ -22,7 +22,6 @@ c2
     END -> G [label="F, f, L, l"];
     END -> F [label="0-9"];
     END -> E [label="-[1-9], 1-9"];
-    END -> A [label="0-9"];
     END -> C [label="0-9"];
     END -> S [label="0-9"];
     S -> H [label="space"];
@@ -39,6 +38,7 @@ c2
     C -> B [label="."];
     D -> B [label="."];
     B -> A [label="0-9"];
+    END -> A [label="0-9"];
   }
 c2
 </details>
