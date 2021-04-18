@@ -20,16 +20,16 @@ c2
   digraph S {
     S -> H [label="space"];
     END -> S [label="0-9"];
+    A -> S [label="1-9"];
+    B -> S [label="0, 1-9"];
     END -> A [label="0-9"];
     END -> C [label="0-9"];
     END -> E [label="-[1-9], 1-9"];
     END -> F [label="0-9"];
     END -> G [label="F, f, L, l"];
     END -> H [label="space"];
-    A -> S [label="1-9"];
     A -> A [label="0-9"];
     B -> A [label="0-9"];
-    B -> S [label="0, 1-9"];
     C -> B [label="."];
     C -> C [label="0-9"];
     D -> B [label="."];
