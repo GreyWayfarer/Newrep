@@ -36,9 +36,9 @@ c2
     D -> C [label="0-9"];
     C -> B [label="."];
     C -> C [label="0-9"];
+    A -> S [label="1-9"];
     B -> S [label="0, 1-9"];
     B -> A [label="0-9"];
-    A -> S [label="1-9"];
     A -> A [label="0-9"];
   }
 c2
