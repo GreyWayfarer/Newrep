@@ -18,8 +18,8 @@ c1
 <summary></summary>
 c2
   digraph S {
-    END -> S [label="0-9"];
     END -> H [label="space"];
+    END -> S [label="0-9"];
     END -> G [label="F, f, L, l"];
     END -> E [label="-[1-9], 1-9"];
     END -> F [label="0-9"];
