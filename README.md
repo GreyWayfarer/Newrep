@@ -6,9 +6,9 @@ c1
     S -> B [label="space"];
     END -> A [label="A-Z, a-z, 0-9"];
     END -> B [label="space"];
+    B -> A [label="A-Z, a-z, 0-9"]; 
     A -> S [label="A-Z, a-z, _"];
     A -> A [label="A-Z, a-z, 0-9"];
-    B -> A [label="A-Z, a-z, 0-9"]; 
   }
 c1
 </details>
@@ -20,6 +20,12 @@ c2
   digraph S {
     S -> H [label="space"];
     END -> S [label="0-9"];
+    END -> A [label="0-9"];
+    END -> C [label="0-9"];
+    END -> E [label="-[1-9], 1-9"];
+    END -> F [label="0-9"];
+    END -> G [label="F, f, L, l"];
+    END -> H [label="space"];
     A -> S [label="1-9"];
     A -> A [label="0-9"];
     B -> A [label="0-9"];
@@ -34,12 +40,6 @@ c2
     G -> F [label="0-9"];
     F -> F [label="0-9"];
     H -> G [label="F, f, L, l"];
-    END -> A [label="0-9"];
-    END -> C [label="0-9"];
-    END -> E [label="-[1-9], 1-9"];
-    END -> F [label="0-9"];
-    END -> G [label="F, f, L, l"];
-    END -> H [label="space"];
   }
 c2
 </details>
