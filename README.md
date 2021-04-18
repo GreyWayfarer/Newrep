@@ -22,22 +22,22 @@ c2
     END -> S [label="0-9"];
     A -> S [label="1-9"];
     B -> S [label="0, 1-9"];
+    END -> H [label="space"];
     END -> A [label="0-9"];
     END -> C [label="0-9"];
     END -> E [label="-[1-9], 1-9"];
     END -> F [label="0-9"];
     END -> G [label="F, f, L, l"];
-    END -> H [label="space"];
     H -> G [label="F, f, L, l"];
     G -> E [label="-[1-9], 1-9"];
     G -> F [label="0-9"];
+    E -> D [label="e, E"];
     F -> F [label="0-9"];
     F -> E [label="-[1-9], 1-9"];
     A -> A [label="0-9"];
     B -> A [label="0-9"];
     C -> B [label="."];
     C -> C [label="0-9"];
-    E -> D [label="e, E"];
     D -> B [label="."];
     D -> C [label="0-9"];
   }
