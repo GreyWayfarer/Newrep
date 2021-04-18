@@ -3,10 +3,10 @@
 <summary></summary>
 c1
   digraph G {
-    END -> A [label="A-Z, a-z, 0-9"];
-    A -> S [label="A-Z, a-z, _"];
     S -> B [label="space"];
+    END -> A [label="A-Z, a-z, 0-9"];
     END -> B [label="space"];
+    A -> S [label="A-Z, a-z, _"];
     A -> A [label="A-Z, a-z, 0-9"];
     B -> A [label="A-Z, a-z, 0-9"]; 
   }
@@ -18,10 +18,10 @@ c1
 <summary></summary>
 c2
   digraph S {
-    A -> A [label="0-9"];
-    A -> S [label="1-9"];
     S -> H [label="space"];
     END -> S [label="0-9"];
+    A -> S [label="1-9"];
+    A -> A [label="0-9"];
     B -> A [label="0-9"];
     B -> S [label="0, 1-9"];
     C -> B [label="."];
