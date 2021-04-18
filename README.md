@@ -3,8 +3,8 @@
 <summary></summary>
 c1
   digraph G {
-    END -> A [label="A-Z, a-z, 0-9"];
     END -> B [label="space"];
+    END -> A [label="A-Z, a-z, 0-9"];
     S -> B [label="space"];
     B -> A [label="A-Z, a-z, 0-9"];
     A -> A [label="A-Z, a-z, 0-9"];
@@ -37,6 +37,7 @@ c2
     C -> B [label="."];
     B -> S [label="0, 1-9"];
     B -> A [label="0-9"];
+    A -> A [label="0-9"];
     A -> S [label="1-9"];
     END -> S [label="0-9"];
   }
